@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="app.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="app.js"></script>
+        <title>
+            Bike count prediction
+        </title>
+    </head>
+    <body bgcolor="pink"> 
+        <form align="center">
+            <div padding=20px>
+                <label for="season">Season</label><br>
+                <select name="season" id="season">
+                    <option value="1">Spring</option>
+                    <option value="2">Summer</option>
+                    <option value="3">Fall</option>
+                    <option value="4">Winter</option>
+                </select>   
+                <br> 
+                <br>
+                <label for="workingday">Workingday</label><br>
+                <select name="workingday" id="workingday">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>   
+                <br> 
+                <br>    
+            <label for="temp">Temp</label><br>
+            <input type="text" id="temp" name="temp"><br>
+            <br>    
+            <label for="atemp">Atemp</label><br>
+            <input type="text" id="atemp" name="atemp"><br>
+            <br>    
+            <label for="humidity">Humidity</label><br>
+            <input type="text" id="humidity" name="humidity"><br>
+            <br>
+            <label for="windspeed">Wind speed</label><br>
+            <input type="text" id="windspeed" name="windspeed">
+            <br>
+            <br>
+            <button class="submit" onclick="onClickedEstimatedCount()" type="button">Estimate Count</button>
+            </div>
+            <div id="uiEstimatedCount" class="result">	<h2></h2> </div>
+        </form>
+    </body>
+</html>
